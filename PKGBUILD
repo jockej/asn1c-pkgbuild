@@ -47,12 +47,12 @@ build() {
 }
 
 # check() {
-#   cd "$srcdir/$_gitname-build"  
+#   cd "$srcdir/$_gitname-build"
 #   make check
 # }
 
 package() {
-  cd "$srcdir/$_gitname-build"  
+  cd "$srcdir/$_gitname-build"
   make DESTDIR="$pkgdir/" install
 }
 
